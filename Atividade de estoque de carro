@@ -1,0 +1,56 @@
+var estoque = ['Compass', 'Renegade', 'Outlander', 'Tracker', 'Duster']
+var loja = ['Compass', 'Renegade', 'Outlander', 'Tracker', 'Duster']
+
+
+function add (nome){
+    estoque.push(nome)
+}
+function rm(nome){
+    let posicao 
+    posicao = estoque.indexOf(nome)
+    estoque.splice(posicao,1)
+}
+function addLoja (nome){
+    loja.push(nome)
+}
+
+
+function rmLoja(nome){
+    let posicao 
+    posicao = loja.indexOf(nome)
+    loja.splice(posicao,1)
+}
+
+function consultar(nome){
+    let posicao
+    posicao = estoque.indexOf(nome)
+    if (posicao == -1)
+        console.log("Carro não encontrado no estoque")
+
+        
+
+
+
+}
+
+rm("Tracker")
+rmLoja("Tracker")
+
+add ("Onix")
+addLoja ("Onix")
+
+rm("Compass")
+rmLoja("Compass")
+
+rm("Outlander")
+rmLoja("Outlander")
+
+add ("Pagero")
+addLoja ("Pagero")
+
+add ("Tiggo")
+addLoja ("Tiggo")
+
+rm("Duster")
+
+consultar("Duster")
